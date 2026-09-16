@@ -1,0 +1,2352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/geeks.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-xl">
+        <div class="container-fluid  shadow px-2 px-md-4  py-3">
+
+            <a class="navbar-brand" href="geeks.html">
+                <img src="assets/images/logo.svg" alt="Geeks">
+            </a>
+
+            <div class="order-lg-3">
+                <div class="d-flex gap-2 align-items-center">
+
+                    <button class="btn btn-dark rounded-circle" type="button">
+                        <i class="fas fa-sun"></i>
+                    </button>
+
+                    <button class="btn btn-dark rounded-circle" type="button">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                    <a href="#" class="btn py-2 px-3  theme d-none d-md-block "><strong>Sign in</strong></a>
+                    <a href="#" class="btn py-2 px-3   purpleback theme text-light   d-none d-md-block"><strong>Sign
+                            up</strong></a>
+
+
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                </div>
+            </div>
+
+
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar">
+
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body">
+
+
+                    <ul class="navbar-nav mx-auto fs-5">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/job.html">Job</a>
+                        </li>
+
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/about.html">About</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/help-center.html">Help Center</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/blog.html">Blogs</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/grid.html">Grid</a>
+                        </li>
+
+                        <li class="nav-item dropdown position-static"> <a class="nav-link dropdown-toggle" href="#"
+                                role="button" data-bs-toggle="dropdown"> Mega Menu </a>
+                            <div class="dropdown-menu  p-4">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12 col-xl-4 border-end-xl">
+                                            <h6 class="fw-bold mb-3">Degrees</h6>
+                                            <ul class="list-unstyled">
+                                                <li class="mb-3"> <img src="assets/images/degree-1.png">
+                                                    <div><small class="text-muted d-block">University of
+                                                            Michigan</small><strong>Master of Applied Data
+                                                            Science</strong>
+                                                    </div>
+                                                </li>
+                                                <li class="mb-3"> <img src="assets/images/degree-2.png" width="30"
+                                                        class="me-2">
+                                                    <div><small class="text-muted d-block">A&B College
+                                                            1980</small><strong>MBA in Business Analytics</strong></div>
+                                                </li>
+                                                <li class="mb-3"> <img src="assets/images/degree-3.png" width="30"
+                                                        class="me-2">
+                                                    <div><small class="text-muted d-block"> Imperial College
+                                                            London</small><strong> Master of Science in Machine</strong>
+                                                    </div>
+                                                </li>
+                                            </ul> <a href="#" class="btn btn-sm theme mb-2">View all degree</a>
+                                        </div>
+                                        <div class="col-12 col-xl-4 border-end-xl">
+                                            <h6 class="fw-bold mb-3">Certificate Programs</h6>
+                                            <ul class="list-unstyled">
+                                                <li class="mb-3"> <img src="assets/images/google.png">
+                                                    <div><small class="text-muted d-block">No
+                                                            Prerequisites</small><strong>Google Data Analytics</strong>
+                                                    </div>
+                                                </li>
+                                                <li class="mb-3"> <img src="assets/images/IBM.png">
+                                                    <div><small class="text-muted d-block">No
+                                                            Prerequisites</small><strong>IBM Data Science</strong>
+                                                    </div>
+                                                </li>
+                                                <li class="mb-3"> <img src="assets/images/microsoft.png">
+                                                    <div><small class="text-muted d-block">Expert
+                                                            Feedback</small><strong>Machine Leaning for
+                                                            Analytics</strong>
+                                                    </div>
+                                                </li>
+                                            </ul> <a href="#" class="btn btn-sm theme mb-2">View all Certificates</a>
+                                        </div>
+                                        <div class="col-12 col-xl-4">
+                                            <h6 class="fw-bold mb-3">Popular Skills</h6>
+                                            <ul class="list-unstyled mb-3">
+                                                <li><strong>Python</strong></li>
+                                                <li><strong>SQL</strong></li>
+                                                <li><strong>Microsoft Excel</strong></li>
+                                                <li><strong>Machine Learning</strong></li>
+                                                <li><strong>Data Science</strong></li>
+                                                <li><strong>Data Analytics</strong></li>
+                                                <li><strong>Power BI</strong></li>
+                                                <li><strong>Artificial Intelligence</strong></li>
+                                            </ul> <a href="#" class="btn btn-sm theme mb-2"> View all Skills </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </nav>
+
+    <div class="container mt-5  ">
+        <div class="row">
+
+            <div class="col-lg-6 mb-5 ">
+
+
+                <h5 class="text-dark mb-2">
+                    <i class="fa-solid fa-check  text-success bg-sussces rounded-circle me-2"></i>Most trusted education
+                    platform
+                </h5>
+
+                <h2 class="display-4 fw-bold mb-3">Grow your skills and advance career</h2>
+
+                <p class="pe-lg-10 fs-4 mb-5">
+                    Start, switch, or advance your career with more than 5,000 courses, Professional Certificates,
+                    and degrees from world-class universities and companies.
+                </p>
+
+                <a href="#" class="btn fs-5 btn-sm theme">Join Free Now</a>
+                <a href="https://www.youtube.com/watch?v=Nfzi7034Kbg" class=" fs-4 text-decoration-none  ms-3">
+                    <img src="assets/images/play-btn.svg" alt="play">
+                    Watch Demo
+                </a>
+
+            </div>
+            <div class="col-lg-6 d-flex justify-content-center ">
+
+                <div class="position-relative">
+                    <img src="assets/images/bg-thumb.svg" alt="img" class="d-none d-sm-inline-block">
+                    <img src="assets/images/girl-image.png" alt="girl"
+                        class="w-100 w-md-auto position-absolute end-0 bottom-0 d-none d-sm-inline-block">
+                    <img src="assets/images/frame-1.svg" alt="frame" class="position-absolute d-none d-md-inline-block"
+                        style="margin-left: -100px;">
+                    <img src="assets/images/frame-2.svg" alt="frame"
+                        class="position-absolute bottom-0 start-0 d-none d-md-inline-block"
+                        style="margin-bottom: -80px;">
+                    <img src="assets/images/target.svg" alt="target"
+                        class="position-absolute bottom-0  d-none d-md-inline-block">
+                    <img src="assets/images/sound.svg" alt="sound"
+                        class="position-absolute top-50 start-0  d-none d-md-inline-block" style="margin-left: -100px;">
+                    <img src="assets/images/trophy.svg" alt="trophy"
+                        class="position-absolute top-0 start-0  d-none d-md-inline-block">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container mt-10">
+        <div class="row">
+            <div class="col-md-6 col-lg-3 border-top border-bottom border-end">
+                <div class="py-5 text-center">
+
+                    <i class="fa-solid fa-award pb-3 fs-1" style="color: #74C0FC;"></i>
+
+                    <h2 class="mb-1">316,000+</h2>
+                    <p>Qualified Instructor</p>
+
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 border-top border-bottom border-end">
+
+                <div class="py-5 text-center">
+
+                    <i class="fa-solid fa-users pb-3 fs-1" style="color: #FFD43B;"></i>
+                    <h2 class="mb-1">1.8 Billion+</h2>
+                    <p>Course enrolments</p>
+
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 border-top  border-bottom border-end">
+
+                <div class="py-5 text-center">
+
+                    <i class="fa-solid fa-tv pb-3 fs-1" style="color: #59429e;"></i>
+                    <h2 class="mb-1">41,000+</h2>
+                    <p>Courses in 42 languages</p>
+
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 border-top  border-bottom">
+
+                <div class="py-5 text-center">
+
+                    <i class="fa-solid fa-film pb-3 fs-1" style="color: #63E6BE;"></i>
+                    <h2 class="mb-1">179,000+</h2>
+                    <p>Online Videos</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col">
+                <h1>Most Popular Courses</h1>
+                <p class="fs-5">These are the most popular courses among Geeks Courses learners worldwide in year 2022
+                </p>
+            </div>
+            <div class="col-md-12">
+                <ul class="nav mb-4 lwhite rounded-3 px-3 py-2 overflow-x-auto flex-nowrap">
+
+                    <li class="nav-item">
+                        <button class="nav-link active text-dark" data-bs-toggle="tab" data-bs-target="#development">
+                            Development
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link text-dark" data-bs-toggle="tab" data-bs-target="#design">
+                            Design
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link text-dark" data-bs-toggle="tab" data-bs-target="#marketing">
+                            Marketing
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link text-dark" data-bs-toggle="tab" data-bs-target="#business">
+                            Business
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link text-dark" data-bs-toggle="tab" data-bs-target="#health">
+                            Health
+                        </button>
+                    </li>
+                </ul>
+
+                <div class="tab-content mt-4">
+
+                    <div class="tab-pane fade show active" id="development">
+
+
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                            <div class="col">
+                                <div class="card ">
+                                    <a href=""><img src="assets/images/course-javascript.jpg" alt="course"
+                                            class="card-img-top"></a>
+
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-3">
+                                            <span class="badge bg-primary ">Intermediate</span>
+                                            <a href="#" class="fs-5"><i class="fa-regular fa-heart"
+                                                    style="color: #B197FC;"></i></a>
+                                        </div>
+                                        <h4 class="mb-2">
+                                            <a class="text-decoration-none text-dark" href="">How to easily create a
+                                                website
+                                                with JavaScript</a>
+                                        </h4>
+
+                                        <small>By: Claire Evans</small>
+                                        <div class="mt-3">
+
+                                            <span class="fs-6 text-warning">
+                                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i>
+                                            </span>
+
+                                            <span class="text-warning">4.5</span>
+                                            <span class="fs-6">(9,300)</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="row align-items-center g-0">
+                                            <div class="col">
+                                                <h5 class="mb-0">$39.00</h5>
+                                            </div>
+
+                                            <div class="col-auto">
+                                                <a class="text-decoration-none text-dark" href="#">
+                                                    <i class="fa-solid fa-cart-shopping" style="color: #754ffe;"></i>
+                                                    Get Enrolled
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+
+                                <div class="card ">
+                                    <a href=""><img src="assets/images/course-css.jpg" alt="course"
+                                            class="card-img-top"></a>
+
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-3">
+                                            <span class="badge bg-danger ">Beginner</span>
+                                            <a href="#" class="fs-5"><i class="fa-regular fa-heart"
+                                                    style="color: #B197FC;"></i></a>
+                                        </div>
+                                        <h4 class="mb-2">
+                                            <a class="text-decoration-none text-dark" href="">CSS: ultimate CSS course
+                                                from
+                                                beginner </a>
+                                        </h4>
+
+                                        <small>By: Carolyn Welborn</small>
+                                        <div class="mt-3">
+                                            <span class="fs-6 text-warning">
+                                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span class="text-warning">4.5</span>
+                                            <span class="fs-6">(8,890)</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="row align-items-center g-0">
+                                            <div class="col">
+                                                <h5 class="mb-0">$30.00</h5>
+                                            </div>
+
+                                            <div class="col-auto">
+                                                <a class="text-decoration-none text-dark" href="#">
+                                                    <i class="fa-solid fa-cart-shopping" style="color: #754ffe;"></i>
+                                                    Get Enrolled
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+
+                                <div class="card ">
+                                    <a href=""><img src="assets/images/course-gatsby.jpg" alt="course"
+                                            class="card-img-top"></a>
+
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-3">
+                                            <span class="badge bg-primary">Intermediate</span>
+                                            <a href="#" class="fs-5"><i class="fa-regular fa-heart"
+                                                    style="color: #B197FC;"></i></a>
+                                        </div>
+                                        <h4 class="mb-2"><a class="text-decoration-none text-dark" href="">The
+                                                Gatsby Course: build web application</a></h4>
+
+                                        <small>By: Floyd Amall</small>
+                                        <div class="mt-3">
+                                            <span class="fs-6 text-warning">
+                                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span class="text-warning">4.5</span>
+                                            <span class="fs-6">(13,245)</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="row align-items-center g-0">
+                                            <div class="col">
+                                                <h5 class="mb-0">$34.00</h5>
+                                            </div>
+
+                                            <div class="col-auto">
+                                                <a class="text-decoration-none text-dark" href="#">
+                                                    <i class="fa-solid fa-cart-shopping" style="color: #754ffe;"></i>
+                                                    Get Enrolled
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+
+                                <div class="card ">
+                                    <a href=""><img src="assets/images/course-wordpress.jpg" alt="course"
+                                            class="card-img-top"></a>
+
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-3">
+                                            <span class="badge bg-danger ">Advance</span>
+                                            <a href="#" class="fs-5"><i class="fa-regular fa-heart"
+                                                    style="color: #B197FC;"></i></a>
+                                        </div>
+                                        <h4 class="mb-2">
+                                            <a class="text-decoration-none text-dark" href="">WordPress: introduction to
+                                                wordpress </a>
+                                        </h4>
+
+                                        <small>By: Victor Elliott</small>
+                                        <div class="mt-3">
+                                            <span class="fs-6 text-warning">
+                                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span class="text-warning">4.5</span>
+                                            <span class="fs-6">(9,300)</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="row align-items-center g-0">
+                                            <div class="col">
+                                                <h5 class="mb-0">$39.00</h5>
+                                            </div>
+
+                                            <div class="col-auto">
+                                                <a class="text-decoration-none text-dark" href="#">
+                                                    <i class="fa-solid fa-cart-shopping" style="color: #754ffe;"></i>
+                                                    Get Enrolled
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+
+                                <div class="card ">
+                                    <a href=""><img src="assets/images/course-react.jpg" alt="course"
+                                            class="card-img-top"></a>
+
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-3">
+                                            <span class="badge bg-primary">Intermediate</span>
+                                            <a href="#" class="fs-5"><i class="fa-regular fa-heart"
+                                                    style="color: #B197FC;"></i></a>
+                                        </div>
+                                        <h4 class="mb-2">
+                                            <a class="text-decoration-none text-dark" href="">How
+                                                to easily create any  website with  React</a>
+                                        </h4>
+
+                                        <small>By: Morris Mccoy</small>
+                                        <div class="mt-3">
+                                            <span class="fs-6 text-warning">
+                                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span class="text-warning">4.5</span>
+                                            <span class="fs-6">(7,700)</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="row align-items-center g-0">
+                                            <div class="col">
+                                                <h5 class="mb-0">$29.00</h5>
+                                            </div>
+
+                                            <div class="col-auto">
+                                                <a class="text-decoration-none text-dark" href="#">
+                                                    <i class="fa-solid fa-cart-shopping" style="color: #754ffe;"></i>
+                                                    Get Enrolled
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+
+                                <div class="card ">
+                                    <a href=""><img src="assets/images/course-graphql.jpg" alt="course"
+                                            class="card-img-top"></a>
+
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-3">
+                                            <span class="badge bg-success ">Beginner</span>
+                                            <a href="#" class="fs-5"><i class="fa-regular fa-heart"
+                                                    style="color: #B197FC;"></i></a>
+                                        </div>
+                                        <h4 class="mb-2"><a class="text-decoration-none text-dark" href="">GraphQL:
+                                                introduction to graphQL</a></h4>
+
+                                        <small>By: Michael Cundiff</small>
+                                        <div class="mt-3">
+                                            <span class="fs-6 text-warning">
+                                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span class="text-warning">4.5</span>
+                                            <span class="fs-6">(9,300)</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="row align-items-center g-0">
+                                            <div class="col">
+                                                <h5 class="mb-0">Free</h5>
+                                            </div>
+
+                                            <div class="col-auto">
+                                                <a class="text-decoration-none text-dark" href="#">
+                                                    <i class="fa-solid fa-cart-shopping" style="color: #754ffe;"></i>
+                                                    Get Enrolled
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+
+                                <div class="card ">
+                                    <a href=""><img src="assets/images/course-angular.jpg" alt="course"
+                                            class="card-img-top"></a>
+
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-3">
+                                            <span class="badge bg-danger ">Advance</span>
+                                            <a href="#" class="fs-5"><i class="fa-regular fa-heart"
+                                                    style="color: #B197FC;"></i></a>
+                                        </div>
+                                        <h4 class="mb-2"><a class="text-decoration-none text-dark" href="">Angular - the
+                                                complete guide for beginner</a></h4>
+
+                                        <small>By: Jeffrey McCoy</small>
+                                        <div class="mt-3">
+                                            <span class="fs-6 text-warning">
+                                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span class="text-warning">4.5</span>
+                                            <span class="fs-6">(8,890)</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="row align-items-center g-0">
+                                            <div class="col">
+                                                <h5 class="mb-0">$49.00</h5>
+                                            </div>
+
+                                            <div class="col-auto">
+                                                <a class="text-decoration-none text-dark" href="#">
+                                                    <i class="fa-solid fa-cart-shopping" style="color: #754ffe;"></i>
+                                                    Get Enrolled
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+
+                                <div class="card ">
+                                    <a href=""><img src="assets/images/course-python.jpg" alt="card"
+                                            class="card-img-top"></a>
+
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-3">
+                                            <span class="badge bg-success ">Beginner</span>
+                                            <a href="#" class="fs-5"><i class="fa-regular fa-heart"
+                                                    style="color: #B197FC;"></i></a>
+                                        </div>
+                                        <h4 class="mb-2"><a class="text-decoration-none text-dark" href="">The
+                                                Python Course: build web application</a></h4>
+
+                                        <small>By: Douglas Howell</small>
+                                        <div class="mt-3">
+                                            <span class="fs-6 text-warning">
+                                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span class="text-warning">4.5</span>
+                                            <span class="fs-6">(13,245)</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="row align-items-center g-0">
+                                            <div class="col">
+                                                <h5 class="mb-0">$19.00</h5>
+                                            </div>
+
+                                            <div class="col-auto">
+                                                <a class="text-decoration-none text-dark" href="#">
+                                                    <i class="fa-solid fa-cart-shopping" style="color: #754ffe;"></i>
+                                                    Get Enrolled
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade  " id="design">
+
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                            <div class="col">
+
+                                <div class="card ">
+                                    <a href=""><img src="assets/images/course-angular.jpg" alt="course"
+                                            class="card-img-top"></a>
+
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-3">
+                                            <span class="badge bg-danger ">Advance</span>
+                                            <a href="#" class="fs-5"><i class="fa-regular fa-heart"
+                                                    style="color: #B197FC;"></i></a>
+                                        </div>
+                                        <h4 class="mb-2"><a class="text-decoration-none text-dark" href="">Angular - the
+                                                complete guide for beginner</a></h4>
+
+                                        <small>By: Jeffrey McCoy</small>
+                                        <div class="mt-3">
+                                            <span class="fs-6 text-warning">
+                                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span class="text-warning">4.5</span>
+                                            <span class="fs-6">(8,890)</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="row align-items-center g-0">
+                                            <div class="col">
+                                                <h5 class="mb-0">$49.00</h5>
+                                            </div>
+
+                                            <div class="col-auto">
+                                                <a class="text-decoration-none text-dark" href="#">
+                                                    <i class="fa-solid fa-cart-shopping" style="color: #754ffe;"></i>
+                                                    Get Enrolled
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+
+                                <div class="card ">
+                                    <a href=""><img src="assets/images/course-css.jpg" alt="course"
+                                            class="card-img-top"></a>
+
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-3">
+                                            <span class="badge bg-danger ">Beginner</span>
+                                            <a href="#" class="fs-5"><i class="fa-regular fa-heart"
+                                                    style="color: #B197FC;"></i></a>
+                                        </div>
+                                        <h4 class="mb-2">
+                                            <a class="text-decoration-none text-dark" href="">CSS: ultimate CSS course
+                                                from
+                                                beginner </a>
+                                        </h4>
+
+                                        <small>By: Carolyn Welborn</small>
+                                        <div class="mt-3">
+                                            <span class="fs-6 text-warning">
+                                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span class="text-warning">4.5</span>
+                                            <span class="fs-6">(8,890)</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="row align-items-center g-0">
+                                            <div class="col">
+                                                <h5 class="mb-0">$30.00</h5>
+                                            </div>
+
+                                            <div class="col-auto">
+                                                <a class="text-decoration-none text-dark" href="#">
+                                                    <i class="fa-solid fa-cart-shopping" style="color: #754ffe;"></i>
+                                                    Get Enrolled
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+
+                                <div class="card ">
+                                    <a href=""><img src="assets/images/course-react.jpg" alt="course"
+                                            class="card-img-top"></a>
+
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-3">
+                                            <span class="badge bg-primary">Intermediate</span>
+                                            <a href="#" class="fs-5"><i class="fa-regular fa-heart"
+                                                    style="color: #B197FC;"></i></a>
+                                        </div>
+                                        <h4 class="mb-2">
+                                            <a class="text-decoration-none text-dark" href="">How
+                                                to easily create a website with React</a>
+                                        </h4>
+
+                                        <small>By: Morris Mccoy</small>
+                                        <div class="mt-3">
+                                            <span class="fs-6 text-warning">
+                                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span class="text-warning">4.5</span>
+                                            <span class="fs-6">(7,700)</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="row align-items-center g-0">
+                                            <div class="col">
+                                                <h5 class="mb-0">$29.00</h5>
+                                            </div>
+
+                                            <div class="col-auto">
+                                                <a class="text-decoration-none text-dark" href="#">
+                                                    <i class="fa-solid fa-cart-shopping" style="color: #754ffe;"></i>
+                                                    Get Enrolled
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+
+                                <div class="card ">
+                                    <a href=""><img src="assets/images/course-graphql.jpg" alt="course"
+                                            class="card-img-top"></a>
+
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-3">
+                                            <span class="badge bg-success ">Beginner</span>
+                                            <a href="#" class="fs-5"><i class="fa-regular fa-heart"
+                                                    style="color: #B197FC;"></i></a>
+                                        </div>
+                                        <h4 class="mb-2"><a class="text-decoration-none text-dark" href="">GraphQL:
+                                                introduction to graphQL</a></h4>
+
+                                        <small>By: Michael Cundiff</small>
+                                        <div class="mt-3">
+                                            <span class="fs-6 text-warning">
+                                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span class="text-warning">4.5</span>
+                                            <span class="fs-6">(9,300)</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="row align-items-center g-0">
+                                            <div class="col">
+                                                <h5 class="mb-0">Free</h5>
+                                            </div>
+
+                                            <div class="col-auto">
+                                                <a class="text-decoration-none text-dark" href="#">
+                                                    <i class="fa-solid fa-cart-shopping" style="color: #754ffe;"></i>
+                                                    Get Enrolled
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card ">
+                                    <a href=""><img src="assets/images/course-javascript.jpg" alt="course"
+                                            class="card-img-top"></a>
+
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-3">
+                                            <span class="badge bg-primary ">Intermediate</span>
+                                            <a href="#" class="fs-5"><i class="fa-regular fa-heart"
+                                                    style="color: #B197FC;"></i></a>
+                                        </div>
+                                        <h4 class="mb-2">
+                                            <a class="text-decoration-none text-dark" href="">How to easily create a
+                                                website
+                                                with JavaScript</a>
+                                        </h4>
+
+                                        <small>By: Claire Evans</small>
+                                        <div class="mt-3">
+
+                                            <span class="fs-6 text-warning">
+                                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i>
+                                            </span>
+
+                                            <span class="text-warning">4.5</span>
+                                            <span class="fs-6">(9,300)</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="row align-items-center g-0">
+                                            <div class="col">
+                                                <h5 class="mb-0">$39.00</h5>
+                                            </div>
+
+                                            <div class="col-auto">
+                                                <a class="text-decoration-none text-dark" href="#">
+                                                    <i class="fa-solid fa-cart-shopping" style="color: #754ffe;"></i>
+                                                    Get Enrolled
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+
+                                <div class="card ">
+                                    <a href=""><img src="assets/images/course-python.jpg" alt="card"
+                                            class="card-img-top"></a>
+
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-3">
+                                            <span class="badge bg-success ">Beginner</span>
+                                            <a href="#" class="fs-5"><i class="fa-regular fa-heart"
+                                                    style="color: #B197FC;"></i></a>
+                                        </div>
+                                        <h4 class="mb-2"><a class="text-decoration-none text-dark" href="">The
+                                                Python Course: build web application</a></h4>
+
+                                        <small>By: Douglas Howell</small>
+                                        <div class="mt-3">
+                                            <span class="fs-6 text-warning">
+                                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span class="text-warning">4.5</span>
+                                            <span class="fs-6">(13,245)</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="row align-items-center g-0">
+                                            <div class="col">
+                                                <h5 class="mb-0">$19.00</h5>
+                                            </div>
+
+                                            <div class="col-auto">
+                                                <a class="text-decoration-none text-dark" href="#">
+                                                    <i class="fa-solid fa-cart-shopping" style="color: #754ffe;"></i>
+                                                    Get Enrolled
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+
+                                <div class="card ">
+                                    <a href=""><img src="assets/images/course-gatsby.jpg" alt="course"
+                                            class="card-img-top"></a>
+
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-3">
+                                            <span class="badge bg-primary">Intermediate</span>
+                                            <a href="#" class="fs-5"><i class="fa-regular fa-heart"
+                                                    style="color: #B197FC;"></i></a>
+                                        </div>
+                                        <h4 class="mb-2"><a class="text-decoration-none text-dark" href="">The
+                                                Gatsby Course: build web application</a></h4>
+
+                                        <small>By: Floyd Amall</small>
+                                        <div class="mt-3">
+                                            <span class="fs-6 text-warning">
+                                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span class="text-warning">4.5</span>
+                                            <span class="fs-6">(13,245)</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="row align-items-center g-0">
+                                            <div class="col">
+                                                <h5 class="mb-0">$34.00</h5>
+                                            </div>
+
+                                            <div class="col-auto">
+                                                <a class="text-decoration-none text-dark" href="#">
+                                                    <i class="fa-solid fa-cart-shopping" style="color: #754ffe;"></i>
+                                                    Get Enrolled
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+
+                                <div class="card ">
+                                    <a href=""><img src="assets/images/course-wordpress.jpg" alt="course"
+                                            class="card-img-top"></a>
+
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-3">
+                                            <span class="badge bg-danger ">Advance</span>
+                                            <a href="#" class="fs-5"><i class="fa-regular fa-heart"
+                                                    style="color: #B197FC;"></i></a>
+                                        </div>
+                                        <h4 class="mb-2">
+                                            <a class="text-decoration-none text-dark" href="">WordPress: introduction to
+                                                wordpress </a>
+                                        </h4>
+
+                                        <small>By: Victor Elliott</small>
+                                        <div class="mt-3">
+                                            <span class="fs-6 text-warning">
+                                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span class="text-warning">4.5</span>
+                                            <span class="fs-6">(9,300)</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="row align-items-center g-0">
+                                            <div class="col">
+                                                <h5 class="mb-0">$39.00</h5>
+                                            </div>
+
+                                            <div class="col-auto">
+                                                <a class="text-decoration-none text-dark" href="#">
+                                                    <i class="fa-solid fa-cart-shopping" style="color: #754ffe;"></i>
+                                                    Get Enrolled
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="marketing">
+
+
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                            <div class="col">
+                                <div class="card ">
+                                    <a href=""><img src="assets/images/course-javascript.jpg" alt="course"
+                                            class="card-img-top"></a>
+
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-3">
+                                            <span class="badge bg-primary ">Intermediate</span>
+                                            <a href="#" class="fs-5"><i class="fa-regular fa-heart"
+                                                    style="color: #B197FC;"></i></a>
+                                        </div>
+                                        <h4 class="mb-2">
+                                            <a class="text-decoration-none text-dark" href="">How to easily create a
+                                                website
+                                                with JavaScript</a>
+                                        </h4>
+
+                                        <small>By: Claire Evans</small>
+                                        <div class="mt-3">
+
+                                            <span class="fs-6 text-warning">
+                                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i>
+                                            </span>
+
+                                            <span class="text-warning">4.5</span>
+                                            <span class="fs-6">(9,300)</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="row align-items-center g-0">
+                                            <div class="col">
+                                                <h5 class="mb-0">$39.00</h5>
+                                            </div>
+
+                                            <div class="col-auto">
+                                                <a class="text-decoration-none text-dark" href="#">
+                                                    <i class="fa-solid fa-cart-shopping" style="color: #754ffe;"></i>
+                                                    Get Enrolled
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+
+                                <div class="card ">
+                                    <a href=""><img src="assets/images/course-css.jpg" alt="course"
+                                            class="card-img-top"></a>
+
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-3">
+                                            <span class="badge bg-danger ">Beginner</span>
+                                            <a href="#" class="fs-5"><i class="fa-regular fa-heart"
+                                                    style="color: #B197FC;"></i></a>
+                                        </div>
+                                        <h4 class="mb-2">
+                                            <a class="text-decoration-none text-dark" href="">CSS: ultimate CSS course
+                                                from
+                                                beginner </a>
+                                        </h4>
+
+                                        <small>By: Carolyn Welborn</small>
+                                        <div class="mt-3">
+                                            <span class="fs-6 text-warning">
+                                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span class="text-warning">4.5</span>
+                                            <span class="fs-6">(8,890)</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="row align-items-center g-0">
+                                            <div class="col">
+                                                <h5 class="mb-0">$30.00</h5>
+                                            </div>
+
+                                            <div class="col-auto">
+                                                <a class="text-decoration-none text-dark" href="#">
+                                                    <i class="fa-solid fa-cart-shopping" style="color: #754ffe;"></i>
+                                                    Get Enrolled
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+
+                                <div class="card ">
+                                    <a href=""><img src="assets/images/course-gatsby.jpg" alt="course"
+                                            class="card-img-top"></a>
+
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-3">
+                                            <span class="badge bg-primary">Intermediate</span>
+                                            <a href="#" class="fs-5"><i class="fa-regular fa-heart"
+                                                    style="color: #B197FC;"></i></a>
+                                        </div>
+                                        <h4 class="mb-2"><a class="text-decoration-none text-dark" href="">The
+                                                Gatsby Course: build web application</a></h4>
+
+                                        <small>By: Floyd Amall</small>
+                                        <div class="mt-3">
+                                            <span class="fs-6 text-warning">
+                                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span class="text-warning">4.5</span>
+                                            <span class="fs-6">(13,245)</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="row align-items-center g-0">
+                                            <div class="col">
+                                                <h5 class="mb-0">$34.00</h5>
+                                            </div>
+
+                                            <div class="col-auto">
+                                                <a class="text-decoration-none text-dark" href="#">
+                                                    <i class="fa-solid fa-cart-shopping" style="color: #754ffe;"></i>
+                                                    Get Enrolled
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+
+                                <div class="card ">
+                                    <a href=""><img src="assets/images/course-wordpress.jpg" alt="course"
+                                            class="card-img-top"></a>
+
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-3">
+                                            <span class="badge bg-danger ">Advance</span>
+                                            <a href="#" class="fs-5"><i class="fa-regular fa-heart"
+                                                    style="color: #B197FC;"></i></a>
+                                        </div>
+                                        <h4 class="mb-2">
+                                            <a class="text-decoration-none text-dark" href="">WordPress: introduction to
+                                                wordpress </a>
+                                        </h4>
+
+                                        <small>By: Victor Elliott</small>
+                                        <div class="mt-3">
+                                            <span class="fs-6 text-warning">
+                                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span class="text-warning">4.5</span>
+                                            <span class="fs-6">(9,300)</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="row align-items-center g-0">
+                                            <div class="col">
+                                                <h5 class="mb-0">$39.00</h5>
+                                            </div>
+
+                                            <div class="col-auto">
+                                                <a class="text-decoration-none text-dark" href="#">
+                                                    <i class="fa-solid fa-cart-shopping" style="color: #754ffe;"></i>
+                                                    Get Enrolled
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+
+                                <div class="card ">
+                                    <a href=""><img src="assets/images/course-react.jpg" alt="course"
+                                            class="card-img-top"></a>
+
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-3">
+                                            <span class="badge bg-primary">Intermediate</span>
+                                            <a href="#" class="fs-5"><i class="fa-regular fa-heart"
+                                                    style="color: #B197FC;"></i></a>
+                                        </div>
+                                        <h4 class="mb-2">
+                                            <a class="text-decoration-none text-dark" href="">How
+                                                to easily create a website with React</a>
+                                        </h4>
+
+                                        <small>By: Morris Mccoy</small>
+                                        <div class="mt-3">
+                                            <span class="fs-6 text-warning">
+                                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span class="text-warning">4.5</span>
+                                            <span class="fs-6">(7,700)</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="row align-items-center g-0">
+                                            <div class="col">
+                                                <h5 class="mb-0">$29.00</h5>
+                                            </div>
+
+                                            <div class="col-auto">
+                                                <a class="text-decoration-none text-dark" href="#">
+                                                    <i class="fa-solid fa-cart-shopping" style="color: #754ffe;"></i>
+                                                    Get Enrolled
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+
+                                <div class="card ">
+                                    <a href=""><img src="assets/images/course-graphql.jpg" alt="course"
+                                            class="card-img-top"></a>
+
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-3">
+                                            <span class="badge bg-success ">Beginner</span>
+                                            <a href="#" class="fs-5"><i class="fa-regular fa-heart"
+                                                    style="color: #B197FC;"></i></a>
+                                        </div>
+                                        <h4 class="mb-2"><a class="text-decoration-none text-dark" href="">GraphQL:
+                                                introduction to graphQL</a></h4>
+
+                                        <small>By: Michael Cundiff</small>
+                                        <div class="mt-3">
+                                            <span class="fs-6 text-warning">
+                                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span class="text-warning">4.5</span>
+                                            <span class="fs-6">(9,300)</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="row align-items-center g-0">
+                                            <div class="col">
+                                                <h5 class="mb-0">Free</h5>
+                                            </div>
+
+                                            <div class="col-auto">
+                                                <a class="text-decoration-none text-dark" href="#">
+                                                    <i class="fa-solid fa-cart-shopping" style="color: #754ffe;"></i>
+                                                    Get Enrolled
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+
+                                <div class="card ">
+                                    <a href=""><img src="assets/images/course-angular.jpg" alt="course"
+                                            class="card-img-top"></a>
+
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-3">
+                                            <span class="badge bg-danger ">Advance</span>
+                                            <a href="#" class="fs-5"><i class="fa-regular fa-heart"
+                                                    style="color: #B197FC;"></i></a>
+                                        </div>
+                                        <h4 class="mb-2"><a class="text-decoration-none text-dark" href="">Angular - the
+                                                complete guide for beginner</a></h4>
+
+                                        <small>By: Jeffrey McCoy</small>
+                                        <div class="mt-3">
+                                            <span class="fs-6 text-warning">
+                                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span class="text-warning">4.5</span>
+                                            <span class="fs-6">(8,890)</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="row align-items-center g-0">
+                                            <div class="col">
+                                                <h5 class="mb-0">$49.00</h5>
+                                            </div>
+
+                                            <div class="col-auto">
+                                                <a class="text-decoration-none text-dark" href="#">
+                                                    <i class="fa-solid fa-cart-shopping" style="color: #754ffe;"></i>
+                                                    Get Enrolled
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+
+                                <div class="card ">
+                                    <a href=""><img src="assets/images/course-python.jpg" alt="card"
+                                            class="card-img-top"></a>
+
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-3">
+                                            <span class="badge bg-success ">Beginner</span>
+                                            <a href="#" class="fs-5"><i class="fa-regular fa-heart"
+                                                    style="color: #B197FC;"></i></a>
+                                        </div>
+                                        <h4 class="mb-2"><a class="text-decoration-none text-dark" href="">The
+                                                Python Course: build web application</a></h4>
+
+                                        <small>By: Douglas Howell</small>
+                                        <div class="mt-3">
+                                            <span class="fs-6 text-warning">
+                                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span class="text-warning">4.5</span>
+                                            <span class="fs-6">(13,245)</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="row align-items-center g-0">
+                                            <div class="col">
+                                                <h5 class="mb-0">$19.00</h5>
+                                            </div>
+
+                                            <div class="col-auto">
+                                                <a class="text-decoration-none text-dark" href="#">
+                                                    <i class="fa-solid fa-cart-shopping" style="color: #754ffe;"></i>
+                                                    Get Enrolled
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="business">
+
+
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                            <div class="col">
+
+                                <div class="card ">
+                                    <a href=""><img src="assets/images/course-angular.jpg" alt="course"
+                                            class="card-img-top"></a>
+
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-3">
+                                            <span class="badge bg-danger ">Advance</span>
+                                            <a href="#" class="fs-5"><i class="fa-regular fa-heart"
+                                                    style="color: #B197FC;"></i></a>
+                                        </div>
+                                        <h4 class="mb-2"><a class="text-decoration-none text-dark" href="">Angular - the
+                                                complete guide for beginner</a></h4>
+
+                                        <small>By: Jeffrey McCoy</small>
+                                        <div class="mt-3">
+                                            <span class="fs-6 text-warning">
+                                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span class="text-warning">4.5</span>
+                                            <span class="fs-6">(8,890)</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="row align-items-center g-0">
+                                            <div class="col">
+                                                <h5 class="mb-0">$49.00</h5>
+                                            </div>
+
+                                            <div class="col-auto">
+                                                <a class="text-decoration-none text-dark" href="#">
+                                                    <i class="fa-solid fa-cart-shopping" style="color: #754ffe;"></i>
+                                                    Get Enrolled
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+
+                                <div class="card ">
+                                    <a href=""><img src="assets/images/course-css.jpg" alt="course"
+                                            class="card-img-top"></a>
+
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-3">
+                                            <span class="badge bg-danger ">Beginner</span>
+                                            <a href="#" class="fs-5"><i class="fa-regular fa-heart"
+                                                    style="color: #B197FC;"></i></a>
+                                        </div>
+                                        <h4 class="mb-2">
+                                            <a class="text-decoration-none text-dark" href="">CSS: ultimate CSS course
+                                                from
+                                                beginner </a>
+                                        </h4>
+
+                                        <small>By: Carolyn Welborn</small>
+                                        <div class="mt-3">
+                                            <span class="fs-6 text-warning">
+                                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span class="text-warning">4.5</span>
+                                            <span class="fs-6">(8,890)</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="row align-items-center g-0">
+                                            <div class="col">
+                                                <h5 class="mb-0">$30.00</h5>
+                                            </div>
+
+                                            <div class="col-auto">
+                                                <a class="text-decoration-none text-dark" href="#">
+                                                    <i class="fa-solid fa-cart-shopping" style="color: #754ffe;"></i>
+                                                    Get Enrolled
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+
+                                <div class="card ">
+                                    <a href=""><img src="assets/images/course-react.jpg" alt="course"
+                                            class="card-img-top"></a>
+
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-3">
+                                            <span class="badge bg-primary">Intermediate</span>
+                                            <a href="#" class="fs-5"><i class="fa-regular fa-heart"
+                                                    style="color: #B197FC;"></i></a>
+                                        </div>
+                                        <h4 class="mb-2">
+                                            <a class="text-decoration-none text-dark" href="">How
+                                                to easily create a website with React</a>
+                                        </h4>
+
+                                        <small>By: Morris Mccoy</small>
+                                        <div class="mt-3">
+                                            <span class="fs-6 text-warning">
+                                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span class="text-warning">4.5</span>
+                                            <span class="fs-6">(7,700)</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="row align-items-center g-0">
+                                            <div class="col">
+                                                <h5 class="mb-0">$29.00</h5>
+                                            </div>
+
+                                            <div class="col-auto">
+                                                <a class="text-decoration-none text-dark" href="#">
+                                                    <i class="fa-solid fa-cart-shopping" style="color: #754ffe;"></i>
+                                                    Get Enrolled
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+
+                                <div class="card ">
+                                    <a href=""><img src="assets/images/course-graphql.jpg" alt="course"
+                                            class="card-img-top"></a>
+
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-3">
+                                            <span class="badge bg-success ">Beginner</span>
+                                            <a href="#" class="fs-5"><i class="fa-regular fa-heart"
+                                                    style="color: #B197FC;"></i></a>
+                                        </div>
+                                        <h4 class="mb-2"><a class="text-decoration-none text-dark" href="">GraphQL:
+                                                introduction to graphQL</a></h4>
+
+                                        <small>By: Michael Cundiff</small>
+                                        <div class="mt-3">
+                                            <span class="fs-6 text-warning">
+                                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span class="text-warning">4.5</span>
+                                            <span class="fs-6">(9,300)</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="row align-items-center g-0">
+                                            <div class="col">
+                                                <h5 class="mb-0">Free</h5>
+                                            </div>
+
+                                            <div class="col-auto">
+                                                <a class="text-decoration-none text-dark" href="#">
+                                                    <i class="fa-solid fa-cart-shopping" style="color: #754ffe;"></i>
+                                                    Get Enrolled
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card ">
+                                    <a href=""><img src="assets/images/course-javascript.jpg" alt="course"
+                                            class="card-img-top"></a>
+
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-3">
+                                            <span class="badge bg-primary ">Intermediate</span>
+                                            <a href="#" class="fs-5"><i class="fa-regular fa-heart"
+                                                    style="color: #B197FC;"></i></a>
+                                        </div>
+                                        <h4 class="mb-2">
+                                            <a class="text-decoration-none text-dark" href="">How to easily create a
+                                                website
+                                                with JavaScript</a>
+                                        </h4>
+
+                                        <small>By: Claire Evans</small>
+                                        <div class="mt-3">
+
+                                            <span class="fs-6 text-warning">
+                                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i>
+                                            </span>
+
+                                            <span class="text-warning">4.5</span>
+                                            <span class="fs-6">(9,300)</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="row align-items-center g-0">
+                                            <div class="col">
+                                                <h5 class="mb-0">$39.00</h5>
+                                            </div>
+
+                                            <div class="col-auto">
+                                                <a class="text-decoration-none text-dark" href="#">
+                                                    <i class="fa-solid fa-cart-shopping" style="color: #754ffe;"></i>
+                                                    Get Enrolled
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+
+                                <div class="card ">
+                                    <a href=""><img src="assets/images/course-python.jpg" alt="card"
+                                            class="card-img-top"></a>
+
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-3">
+                                            <span class="badge bg-success ">Beginner</span>
+                                            <a href="#" class="fs-5"><i class="fa-regular fa-heart"
+                                                    style="color: #B197FC;"></i></a>
+                                        </div>
+                                        <h4 class="mb-2"><a class="text-decoration-none text-dark" href="">The
+                                                Python Course: build web application</a></h4>
+
+                                        <small>By: Douglas Howell</small>
+                                        <div class="mt-3">
+                                            <span class="fs-6 text-warning">
+                                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span class="text-warning">4.5</span>
+                                            <span class="fs-6">(13,245)</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="row align-items-center g-0">
+                                            <div class="col">
+                                                <h5 class="mb-0">$19.00</h5>
+                                            </div>
+
+                                            <div class="col-auto">
+                                                <a class="text-decoration-none text-dark" href="#">
+                                                    <i class="fa-solid fa-cart-shopping" style="color: #754ffe;"></i>
+                                                    Get Enrolled
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+
+                                <div class="card ">
+                                    <a href=""><img src="assets/images/course-gatsby.jpg" alt="course"
+                                            class="card-img-top"></a>
+
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-3">
+                                            <span class="badge bg-primary">Intermediate</span>
+                                            <a href="#" class="fs-5"><i class="fa-regular fa-heart"
+                                                    style="color: #B197FC;"></i></a>
+                                        </div>
+                                        <h4 class="mb-2"><a class="text-decoration-none text-dark" href="">The
+                                                Gatsby Course: build web application</a></h4>
+
+                                        <small>By: Floyd Amall</small>
+                                        <div class="mt-3">
+                                            <span class="fs-6 text-warning">
+                                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span class="text-warning">4.5</span>
+                                            <span class="fs-6">(13,245)</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="row align-items-center g-0">
+                                            <div class="col">
+                                                <h5 class="mb-0">$34.00</h5>
+                                            </div>
+
+                                            <div class="col-auto">
+                                                <a class="text-decoration-none text-dark" href="#">
+                                                    <i class="fa-solid fa-cart-shopping" style="color: #754ffe;"></i>
+                                                    Get Enrolled
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+
+                                <div class="card ">
+                                    <a href=""><img src="assets/images/course-wordpress.jpg" alt="course"
+                                            class="card-img-top"></a>
+
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-3">
+                                            <span class="badge bg-danger ">Advance</span>
+                                            <a href="#" class="fs-5"><i class="fa-regular fa-heart"
+                                                    style="color: #B197FC;"></i></a>
+                                        </div>
+                                        <h4 class="mb-2">
+                                            <a class="text-decoration-none text-dark" href="">WordPress: introduction to
+                                                wordpress </a>
+                                        </h4>
+
+                                        <small>By: Victor Elliott</small>
+                                        <div class="mt-3">
+                                            <span class="fs-6 text-warning">
+                                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span class="text-warning">4.5</span>
+                                            <span class="fs-6">(9,300)</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="row align-items-center g-0">
+                                            <div class="col">
+                                                <h5 class="mb-0">$39.00</h5>
+                                            </div>
+
+                                            <div class="col-auto">
+                                                <a class="text-decoration-none text-dark" href="#">
+                                                    <i class="fa-solid fa-cart-shopping" style="color: #754ffe;"></i>
+                                                    Get Enrolled
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="health">
+
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                            <div class="col">
+                                <div class="card">
+                                    <a href=""><img src="assets/images/course-javascript.jpg" alt="course"
+                                            class="card-img-top"></a>
+
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-3">
+                                            <span class="badge bg-primary ">Intermediate</span>
+                                            <a href="#" class="fs-5"><i class="fa-regular fa-heart"
+                                                    style="color: #B197FC;"></i></a>
+                                        </div>
+                                        <h4 class="mb-2">
+                                            <a class="text-decoration-none text-dark" href="">How to easily create a
+                                                website
+                                                with JavaScript</a>
+                                        </h4>
+
+                                        <small>By: Claire Evans</small>
+                                        <div class="mt-3">
+
+                                            <span class="fs-6 text-warning">
+                                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i>
+                                            </span>
+
+                                            <span class="text-warning">4.5</span>
+                                            <span class="fs-6">(9,300)</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="row align-items-center g-0">
+                                            <div class="col">
+                                                <h5 class="mb-0">$39.00</h5>
+                                            </div>
+
+                                            <div class="col-auto">
+                                                <a class="text-decoration-none text-dark" href="#">
+                                                    <i class="fa-solid fa-cart-shopping" style="color: #754ffe;"></i>
+                                                    Get Enrolled
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+
+                                <div class="card ">
+                                    <a href=""><img src="assets/images/course-css.jpg" alt="course"
+                                            class="card-img-top"></a>
+
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-3">
+                                            <span class="badge bg-danger ">Beginner</span>
+                                            <a href="#" class="fs-5"><i class="fa-regular fa-heart"
+                                                    style="color: #B197FC;"></i></a>
+                                        </div>
+                                        <h4 class="mb-2">
+                                            <a class="text-decoration-none text-dark" href="">CSS: ultimate CSS course
+                                                from
+                                                beginner </a>
+                                        </h4>
+
+                                        <small>By: Carolyn Welborn</small>
+                                        <div class="mt-3">
+                                            <span class="fs-6 text-warning">
+                                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span class="text-warning">4.5</span>
+                                            <span class="fs-6">(8,890)</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="row align-items-center g-0">
+                                            <div class="col">
+                                                <h5 class="mb-0">$30.00</h5>
+                                            </div>
+
+                                            <div class="col-auto">
+                                                <a class="text-decoration-none text-dark" href="#">
+                                                    <i class="fa-solid fa-cart-shopping" style="color: #754ffe;"></i>
+                                                    Get Enrolled
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+
+                                <div class="card ">
+                                    <a href=""><img src="assets/images/course-gatsby.jpg" alt="course"
+                                            class="card-img-top"></a>
+
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-3">
+                                            <span class="badge bg-primary">Intermediate</span>
+                                            <a href="#" class="fs-5"><i class="fa-regular fa-heart"
+                                                    style="color: #B197FC;"></i></a>
+                                        </div>
+                                        <h4 class="mb-2"><a class="text-decoration-none text-dark" href="">The
+                                                Gatsby Course: build web application</a></h4>
+
+                                        <small>By: Floyd Amall</small>
+                                        <div class="mt-3">
+                                            <span class="fs-6 text-warning">
+                                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span class="text-warning">4.5</span>
+                                            <span class="fs-6">(13,245)</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="row align-items-center g-0">
+                                            <div class="col">
+                                                <h5 class="mb-0">$34.00</h5>
+                                            </div>
+
+                                            <div class="col-auto">
+                                                <a class="text-decoration-none text-dark" href="#">
+                                                    <i class="fa-solid fa-cart-shopping" style="color: #754ffe;"></i>
+                                                    Get Enrolled
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+
+                                <div class="card ">
+                                    <a href=""><img src="assets/images/course-wordpress.jpg" alt="course"
+                                            class="card-img-top"></a>
+
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-3">
+                                            <span class="badge bg-danger ">Advance</span>
+                                            <a href="#" class="fs-5"><i class="fa-regular fa-heart"
+                                                    style="color: #B197FC;"></i></a>
+                                        </div>
+                                        <h4 class="mb-2">
+                                            <a class="text-decoration-none text-dark" href="">WordPress: introduction to
+                                                wordpress </a>
+                                        </h4>
+
+                                        <small>By: Victor Elliott</small>
+                                        <div class="mt-3">
+                                            <span class="fs-6 text-warning">
+                                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span class="text-warning">4.5</span>
+                                            <span class="fs-6">(9,300)</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="row align-items-center g-0">
+                                            <div class="col">
+                                                <h5 class="mb-0">$39.00</h5>
+                                            </div>
+
+                                            <div class="col-auto">
+                                                <a class="text-decoration-none text-dark" href="#">
+                                                    <i class="fa-solid fa-cart-shopping" style="color: #754ffe;"></i>
+                                                    Get Enrolled
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+
+                                <div class="card ">
+                                    <a href=""><img src="assets/images/course-react.jpg" alt="course"
+                                            class="card-img-top"></a>
+
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-3">
+                                            <span class="badge bg-primary">Intermediate</span>
+                                            <a href="#" class="fs-5"><i class="fa-regular fa-heart"
+                                                    style="color: #B197FC;"></i></a>
+                                        </div>
+                                        <h4 class="mb-2">
+                                            <a class="text-decoration-none text-dark" href="">How
+                                                to easily create a website with React</a>
+                                        </h4>
+
+                                        <small>By: Morris Mccoy</small>
+                                        <div class="mt-3">
+                                            <span class="fs-6 text-warning">
+                                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span class="text-warning">4.5</span>
+                                            <span class="fs-6">(7,700)</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="row align-items-center g-0">
+                                            <div class="col">
+                                                <h5 class="mb-0">$29.00</h5>
+                                            </div>
+
+                                            <div class="col-auto">
+                                                <a class="text-decoration-none text-dark" href="#">
+                                                    <i class="fa-solid fa-cart-shopping" style="color: #754ffe;"></i>
+                                                    Get Enrolled
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+
+                                <div class="card ">
+                                    <a href=""><img src="assets/images/course-graphql.jpg" alt="course"
+                                            class="card-img-top"></a>
+
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-3">
+                                            <span class="badge bg-success ">Beginner</span>
+                                            <a href="#" class="fs-5"><i class="fa-regular fa-heart"
+                                                    style="color: #B197FC;"></i></a>
+                                        </div>
+                                        <h4 class="mb-2"><a class="text-decoration-none text-dark" href="">GraphQL:
+                                                introduction to graphQL</a></h4>
+
+                                        <small>By: Michael Cundiff</small>
+                                        <div class="mt-3">
+                                            <span class="fs-6 text-warning">
+                                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span class="text-warning">4.5</span>
+                                            <span class="fs-6">(9,300)</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="row align-items-center g-0">
+                                            <div class="col">
+                                                <h5 class="mb-0">Free</h5>
+                                            </div>
+
+                                            <div class="col-auto">
+                                                <a class="text-decoration-none text-dark" href="#">
+                                                    <i class="fa-solid fa-cart-shopping" style="color: #754ffe;"></i>
+                                                    Get Enrolled
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+
+                                <div class="card ">
+                                    <a href=""><img src="assets/images/course-angular.jpg" alt="course"
+                                            class="card-img-top"></a>
+
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-3">
+                                            <span class="badge bg-danger ">Advance</span>
+                                            <a href="#" class="fs-5"><i class="fa-regular fa-heart"
+                                                    style="color: #B197FC;"></i></a>
+                                        </div>
+                                        <h4 class="mb-2"><a class="text-decoration-none text-dark" href="">Angular - the
+                                                complete guide for beginner</a></h4>
+
+                                        <small>By: Jeffrey McCoy</small>
+                                        <div class="mt-3">
+                                            <span class="fs-6 text-warning">
+                                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span class="text-warning">4.5</span>
+                                            <span class="fs-6">(8,890)</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="row align-items-center g-0">
+                                            <div class="col">
+                                                <h5 class="mb-0">$49.00</h5>
+                                            </div>
+
+                                            <div class="col-auto">
+                                                <a class="text-decoration-none text-dark" href="#">
+                                                    <i class="fa-solid fa-cart-shopping" style="color: #754ffe;"></i>
+                                                    Get Enrolled
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+
+                                <div class="card ">
+                                    <a href=""><img src="assets/images/course-python.jpg" alt="card"
+                                            class="card-img-top"></a>
+
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-3">
+                                            <span class="badge bg-success ">Beginner</span>
+                                            <a href="#" class="fs-5"><i class="fa-regular fa-heart"
+                                                    style="color: #B197FC;"></i></a>
+                                        </div>
+                                        <h4 class="mb-2"><a class="text-decoration-none text-dark" href="">The
+                                                Python Course: build web application</a></h4>
+
+                                        <small>By: Douglas Howell</small>
+                                        <div class="mt-3">
+                                            <span class="fs-6 text-warning">
+                                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span class="text-warning">4.5</span>
+                                            <span class="fs-6">(13,245)</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="row align-items-center g-0">
+                                            <div class="col">
+                                                <h5 class="mb-0">$19.00</h5>
+                                            </div>
+
+                                            <div class="col-auto">
+                                                <a class="text-decoration-none text-dark" href="#">
+                                                    <i class="fa-solid fa-cart-shopping" style="color: #754ffe;"></i>
+                                                    Get Enrolled
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="purpleback mt-10  px-3 rounded-3 ">
+            <div class="row py-5 py-lg-0">
+                <div class="col-lg-6 d-none d-lg-block">
+                    <div class="d-flex justify-content-center">
+
+                        <div class="position-relative">
+                            <img src="assets/images/instructor-1.png" alt="image" class="img-fluid mt-n5">
+                            <img src="assets/images/dollor.svg" alt="dollor"
+                                class="position-absolute bottom-0 start-0 mb-6">
+                            <img src="assets/images/graph.svg" alt="graph" class="position-absolute top-0 end-0">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6  col-12 text-light d-flex align-items-center  ">
+                    <div class=" ">
+                        <h1>Become an instructor today</h1>
+                        <p class="fs-5">Instructors from around the world teach millions of students on Geeks. We
+                            provide
+                            the tools and skills to teach what you love.</p>
+                        <a href="#" class="btn bg-light text-dark fs-5 mt-2  ">Start Teaching Today</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid mt-5 lwhite">
+        <div class="container">
+
+            <div class="row align-items-center py-5">
+                <div class="col-lg-6 col-md-8">
+
+                    <div class="mb-3">
+                        <span>4.5/5.0</span>
+                        <span class=" mx-1 text-warning">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i> 5
+                        </span>
+                        <span>(Based on 3265 ratings)</span>
+                    </div>
+                    <h1>What our customers say</h1>
+                    <p class="fs-4">Hear from teachers , trainers , and leaders in the learning space about how
+                        Geeks empowers
+                        them
+                        to provide quality online learning experiences.</p>
+
+                </div>
+
+                <div class="col-lg-6 col-md-4 text-md-end mt-4 mt-md-0">
+                    <a href="#" class="btn bg-primary fs-5 text-light">View Reviews</a>
+                </div>
+            </div>
+
+            <div class="swiper mySwiper row gy-5">
+                <div class="swiper-wrapper">
+
+
+                    <div class="swiper-slide">
+                        <div class="w-100">
+                            <div class=" text-center  px-3 py-4 bg-light">
+                                <div> <img src="assets/images/avatar-1.jpg" class="w-25 mb-3 rounded-circle" alt="">
+                                    <p>“The generated lorem Ipsum is therefore always free from repetition, injected
+                                        humour,
+                                        or words etc generate lorem Ipsum which looks racteristic reasonable.”</p>
+                                    <h5>Gladys Colbert</h5>
+                                    <span class=" mx-1 text-warning">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i> 5
+                                    </span><br>
+                                    Software Engineer
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="swiper-slide">
+                        <div class="w-100">
+                            <div class=" text-center px-3 py-4 bg-light">
+                                <div> <img src="assets/images/avatar-2.jpg" class="w-25 mb-3 rounded-circle" alt="">
+                                    <p>“The generated lorem Ipsum is therefore always free from repetition, injected
+                                        humour,
+                                        or words etc generate lorem Ipsum which looks racteristic reasonable.”</p>
+                                    <h5>Lisa D. Roloff</h5>
+                                    <span class=" mx-1 text-warning">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i> 5
+                                    </span><br>
+                                    Web Developer
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="swiper-slide">
+                        <div class="w-100">
+                            <div class=" text-center px-3 py-4 bg-light">
+                                <div> <img src="assets/images/avatar-3.jpg" class="w-25 mb-3 rounded-circle" alt="">
+                                    <p>“The generated lorem Ipsum is therefore always free from repetition, injected
+                                        humour,
+                                        or words etc generate lorem Ipsum which looks racteristic reasonable.”</p>
+                                    <h5>Leigh F. Keller</h5>
+                                    <span class=" mx-1 text-warning">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i> 5
+                                    </span><br>
+                                    Marketing Manager
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="swiper-slide">
+                        <div class="w-100">
+                            <div class=" text-center px-3 py-4 bg-light">
+                                <div> <img src="assets/images/avatar-4.jpg" class="w-25 mb-3 rounded-circle" alt="">
+                                    <p>“The generated lorem Ipsum is therefore always free from repetition, injected
+                                        humour,
+                                        or words etc generate lorem Ipsum which looks racteristic reasonable.”</p>
+                                    <h5>Jhon Colbert</h5>
+                                    <span class=" mx-1 text-warning">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i> 5
+                                    </span><br>
+                                    Software Engineer
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="swiper-slide">
+                        <div class="w-100">
+                            <div class=" text-center px-3 py-4 bg-light">
+                                <div> <img src="assets/images/avatar-5.jpg" class="w-25 mb-3 rounded-circle" alt="">
+                                    <p>“The generated lorem Ipsum is therefore always free from repetition, injected
+                                        humour,
+                                        or words etc generate lorem Ipsum which looks racteristic reasonable.”</p>
+                                    <h5>Sam Colbert</h5>
+                                    <span class=" mx-1 text-warning">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i> 5
+                                    </span><br>
+                                    Web Developer
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="w-100">
+                            <div class=" text-center px-3 py-4 bg-light">
+                                <div> <img src="assets/images/avatar-6.jpg" class="w-25 mb-3 rounded-circle" alt="">
+                                    <p>“The generated lorem Ipsum is therefore always free from repetition, injected
+                                        humour,
+                                        or words etc generate lorem Ipsum which looks racteristic reasonable.”</p>
+                                    <h5>Alice Colbert</h5>
+                                    <span class=" mx-1 text-warning">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i> 5
+                                    </span><br>
+                                    Marketing Manager
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div class="position-relative">
+
+                    <div class="swiper-button-prev bg-light p-4 text-secondary rounded-circle   position-absolute ">
+                    </div>
+                    <div class="swiper-button-next bg-light p-4 text-secondary rounded-circle   position-absolute ">
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid   py-5 bg-light">
+        <div class="container footer ">
+            <div class="row">
+                <div class="col-lg-4  pe-5 col-md-6">
+                    <img src="assets/images/logo.svg" alt="">
+                    <p class="fs-5 mt-4">Geek is feature-rich components and beautifully Bootstrap UIKit for developers,
+                        built with
+                        bootstrap responsive framework.</p>
+                    <span class="fs-4"><a href=""><i class="fa-brands fa-facebook purple"></i></a> <a href=""><i
+                                class="fa-brands fa-twitter purple"></i></a> <a href=""><i
+                                class="fa-brands fa-github purple"></i></a></span>
+
+                </div>
+                <div class="col-lg-2  col-md-6 ">
+                    <h2>Company</h2>
+
+                    <ul class="list-unstyled fs-5">
+                        <li><a class=" text-decoration-none text-dark" href="">About</a></li>
+                        <li><a class=" text-decoration-none text-dark" href="">Pricing</a></li>
+                        <li><a class=" text-decoration-none text-dark" href="">Blog</a></li>
+                        <li><a class=" text-decoration-none text-dark" href="">Careers</a></li>
+                        <li><a class=" text-decoration-none text-dark" href="">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2  col-md-6">
+                    <h2>Support</h2>
+                    <ul class="list-unstyled fs-5">
+                        <li><a class=" text-decoration-none text-dark" href="">Help and Support</a></li>
+                        <li><a class=" text-decoration-none text-dark" href="">Become Instructor</a></li>
+                        <li><a class=" text-decoration-none text-dark" href="">Get the app</a></li>
+                        <li><a class=" text-decoration-none text-dark" href="">FAQ’s</a></li>
+                        <li><a class=" text-decoration-none text-dark" href="">Tutorial</a></li>
+                    </ul>
+
+
+
+
+
+                </div>
+                <div class="col-lg-4 fs-5  col-md-6  ">
+                    <h2>Get in touch</h2>
+                    <div>339 McDermott Points Hettingerhaven, NV 15283</div>
+                    <div class="email">Email: <a class=" text-decoration-none purple" href="">support@geeksui.com</a>
+                    </div>
+                    <div>Phone: (000) 123 456 789</div>
+                    <div class="d-flex mt-3 gap-2 flex-wrap"> <img src="assets/images/appstore.svg" alt=""><img
+                            src="assets/images/playstore.svg" alt=""></div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            loop: true,
+            spaceBetween: 20,
+            autoplay: true,
+
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+
+            breakpoints: {
+                480: { slidesPerView: 1 },
+                767: { slidesPerView: 2 },
+                1024: { slidesPerView: 4 }
+            }
+        });
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>

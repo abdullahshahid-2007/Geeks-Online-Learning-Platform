@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/geeks.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg shadow  ">
+        <div class="container-fluid px-4 py-2">
+
+            <a class="navbar-brand" href="../geeks.html">
+                <img src="../assets/images/logo.svg" alt="Geeks">
+            </a>
+
+            <div class="order-lg-3 ms-lg-3 ">
+                <div class="d-flex gap-2 align-items-center">
+
+                    <button class="  fs-4 border-0 rounded-circle" type="button">
+                        <i class="fa-solid fa-globe"></i>
+                    </button>
+
+                    <a href="#" class="btn py-2 px-3  theme d-none d-md-block "><strong>Sign in</strong></a>
+                    <a href="#" class="btn py-2 px-3   purpleback theme text-light   d-none d-md-block"><strong>Sign
+                            up</strong></a>
+
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarContent">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                </div>
+            </div>
+
+
+            <div class="collapse navbar-collapse about" id="navbarContent">
+                <ul class="navbar-nav me-auto mb-2 mb-xl-0 ">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fs-5 text-dark" href="#" role="button"
+                            data-bs-toggle="dropdown">
+                            Browse
+                        </a>
+                        <ul class="dropdown-menu mt-2 fs-5">
+                            <li><a class="dropdown-item" href="#">Web Development</a></li>
+                            <li><a class="dropdown-item" href="#">Design</a></li>
+                            <li><a class="dropdown-item" href="#">Mobile App</a></li>
+                            <li><a class="dropdown-item" href="#">IT Software</a></li>
+                            <li><a class="dropdown-item" href="#">Marketing</a></li>
+                            <li><a class="dropdown-item" href="#">Music</a></li>
+                            <li><a class="dropdown-item" href="#">Lifestyle</a></li>
+                            <li><a class="dropdown-item" href="#">Business</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link text-dark fs-5" href="#">Landings</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark fs-5" href="#">Pages</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark fs-5" href="#">Accounts</a></li>
+
+
+                </ul>
+
+
+            </div>
+
+
+        </div>
+    </nav>
+
+    <div class="container py-5">
+        <div class="row">
+            <div class="col">
+                <div class="fs-6 fs-sm-5 mb-3"><a href="" class="text-decoration-none  purple">Web Design</a> > <a
+                        href="" class="text-decoration-none  purple">UI Design</a> > Courses Grid</div>
+                <h1>Courses Grid</h1>
+                <p class="fs-5"> Explore courses from experienced, real-world experts.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container pb-5">
+        <div class="row">
+            <div class="col-md-4 fs-5">
+                <button class="btn btn-white border-0 d-md-none mb-3" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#filter">
+                    <i class="fa-solid fa-sliders me-1"></i>Filters
+                </button>
+                <div class="offcanvas-md lwhite offcanvas-start" tabindex="-1" id="filter">
+                    <div class="offcanvas-header d-md-none ">
+                        <h5 class="offcanvas-title fw-bold" id="filterLabel">Filters</h5>
+                    </div>
+                    <div class="offcanvas-body d-block p-3 p-md-0">
+
+                  
+                        <div class="d-none d-md-block mb-3">
+                            <h4><i class="fa-solid fa-sliders ms-1"></i> Filters</h4>
+                        </div>
+                        <div class="card mt-3 p-3 rounded-3">
+                            <a class=" text-dark fw-semibold text-decoration-none " data-bs-toggle="collapse"
+                                href="#collapseExample" role="button">
+                                Topic
+                                <span class="float-end">
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </span>
+                            </a>
+                            <div class="collapse show" id="collapseExample">
+                                <div class="mt-3">
+
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input shadow-none" type="checkbox" id="TopicOne">
+                                        <label class="form-check-label" for="TopicOne">
+                                            React
+                                        </label>
+                                    </div>
+
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input shadow-none" type="checkbox" id="TopicTwo">
+                                        <label class="form-check-label" for="TopicTwo">
+                                            Javascript
+                                        </label>
+                                    </div>
+
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input shadow-none" type="checkbox" id="TopicThree">
+                                        <label class="form-check-label" for="TopicThree">
+                                            Angular
+                                        </label>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input class="form-check-input shadow-none" type="checkbox" id="TopicFour">
+                                        <label class="form-check-label" for="TopicFour">
+                                            Node
+                                        </label>
+                                    </div>
+                                    <div class="form-check my-2">
+                                        <input class="form-check-input shadow-none" type="checkbox" id="TopicFive">
+                                        <label class="form-check-label" for="TopicFive">
+                                            Angular Js
+                                        </label>
+                                    </div>
+
+
+
+                                    <div class="collapse" id="collapseContent">
+                                        <div class="form-check mb-2">
+                                            <input class="form-check-input shadow-none" type="checkbox" id="TopicSix">
+                                            <label class="form-check-label" for="TopicSix">
+                                                Gatsby
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check mb-2">
+                                            <input class="form-check-input shadow-none" type="checkbox" id="TopicSeven">
+                                            <label class="form-check-label" for="TopicSeven">
+                                                GraphQl
+                                            </label>
+                                        </div>
+                                        <div class="form-check mb-2">
+                                            <input class="form-check-input shadow-none" type="checkbox" id="TopicEight">
+                                            <label class="form-check-label" for="TopicEight">
+                                                VueJs
+                                            </label>
+                                        </div>
+                                        <div class="form-check mb-2">
+                                            <input class="form-check-input shadow-none" type="checkbox" id="TopicNine">
+                                            <label class="form-check-label" for="TopicNine">
+                                                Javascript
+                                            </label>
+                                        </div>
+                                        <div class="form-check mb-2">
+                                            <input class="form-check-input shadow-none" type="checkbox" id="TopicTen">
+                                            <label class="form-check-label" for="TopicTen">
+                                                SCSS
+                                            </label>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="mt-3">
+                                        <a class="fw-semibold text-decoration-none purple" data-bs-toggle="collapse"
+                                            href="#collapseContent" id="toggleText">
+                                            Show More
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="card mt-3 p-3 rounded-3">
+                            <a class=" text-dark fw-semibold text-decoration-none" data-bs-toggle="collapse"
+                                href="#collapseExample2" role="button">
+                                Price
+                                <span class="float-end">
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </span>
+                            </a>
+
+                            <div class="collapse show" id="collapseExample2">
+                                <div class="mt-3">
+
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input shadow-none" type="radio" name="price"
+                                            id="priceAll">
+                                        <label class="form-check-label" for="priceAll">All</label>
+                                    </div>
+
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input shadow-none" type="radio" name="price"
+                                            id="priceFree">
+                                        <label class="form-check-label" for="priceFree">Free</label>
+                                    </div>
+
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input shadow-none" type="radio" name="price"
+                                            id="pricePaid">
+                                        <label class="form-check-label" for="pricePaid">Paid</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card mt-3 p-3 rounded-3">
+                            <a class=" text-dark fw-semibold text-decoration-none" data-bs-toggle="collapse"
+                                href="#collapseExample3" role="button">
+                                Skill Level
+                                <span class="float-end">
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </span>
+                            </a>
+
+                            <div class="collapse show" id="collapseExample3">
+                                <div class="mt-3">
+
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input shadow-none" type="checkbox" id="SkillOne">
+                                        <label class="form-check-label" for="SkillOne">All Level</label>
+                                    </div>
+
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input shadow-none" type="checkbox" id="SkillTwo">
+                                        <label class="form-check-label" for="SkillTwo">Beginner</label>
+                                    </div>
+
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input shadow-none" type="checkbox" id="SkillThree">
+                                        <label class="form-check-label" for="SkillThree">Intermediate</label>
+                                    </div>
+
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input shadow-none" type="checkbox" id="SkillFour">
+                                        <label class="form-check-label" for="SkillFour">Expert</label>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card mt-3 p-3 rounded-3">
+                            <a class=" text-dark fw-semibold text-decoration-none" data-bs-toggle="collapse"
+                                href="#collapseExample4" role="button">
+                                Language
+                                <span class="float-end">
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </span>
+                            </a>
+
+                            <div class="collapse show" id="collapseExample4">
+                                <div class="mt-3">
+
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input shadow-none" type="checkbox" id="LanguageOne">
+                                        <label class="form-check-label" for="LanguageOne">English (13,245)</label>
+                                    </div>
+
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input shadow-none" type="checkbox" id="LanguageTwo">
+                                        <label class="form-check-label" for="LanguageTwo">Português
+                                            (13,245)</label>
+                                    </div>
+
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input shadow-none" type="checkbox" id="LanguageThree">
+                                        <label class="form-check-label" for="LanguageThree">Hindi (13,245)</label>
+                                    </div>
+
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input shadow-none" type="checkbox" id="LanguageFour">
+                                        <label class="form-check-label" for="LanguageFour">Français(13,245)</label>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card mt-3 p-3 rounded-3">
+                            <a class=" text-dark fw-semibold text-decoration-none" data-bs-toggle="collapse"
+                                href="#collapseExample5" role="button">
+                                Rating
+                                <span class="float-end">
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </span>
+                            </a>
+
+                            <div class="collapse show" id="collapseExample5">
+                                <div class="mt-3">
+
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input shadow-none" type="radio" name="Rating"
+                                            id="Rating4.5">
+                                        <label class="form-check-label" for="Rating4.5"><span class="text-warning"><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star-half-stroke"></i></span> 4.5 & up
+                                            (13,245)</label>
+                                    </div>
+
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input shadow-none" type="radio" name="Rating"
+                                            id="Rating4.0">
+                                        <label class="form-check-label" for="Rating4.0"><span class="text-warning"><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-regular fa-star"></i></span> 4.0 & up (3,245)</label>
+                                    </div>
+
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input shadow-none" type="radio" name="Rating"
+                                            id="Rating3.5">
+                                        <label class="form-check-label" for="Rating3.5"><span class="text-warning"><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star-half-stroke"></i><i
+                                                    class="fa-regular fa-star"></i></span> 3.5 & up (2,120)</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input shadow-none" type="radio" name="Rating"
+                                            id="Rating3.0">
+                                        <label class="form-check-label" for="Rating3.0"><span class="text-warning"><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i
+                                                    class="fa-regular fa-star"></i></span> 3.0 & up (2,245)</label>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card mt-3 p-3 rounded-3">
+                            <a class="text-dark fw-semibold text-decoration-none" data-bs-toggle="collapse"
+                                href="#collapseExampleFourth" role="button" aria-controls="collapseExampleFourth">
+                                Video Duration
+                                <span class="float-end">
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </span>
+                            </a>
+
+                            <div class="collapse show" id="collapseExampleFourth">
+                                <div class="mt-3">
+
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input shadow-none" type="checkbox" id="DurationFive">
+                                        <label class="form-check-label" for="DurationFive">0 - 1 Hour (45)</label>
+                                    </div>
+
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input shadow-none" type="checkbox" id="DurationSix">
+                                        <label class="form-check-label" for="DurationSix">1 - 3 Hour (12)</label>
+                                    </div>
+
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input shadow-none" type="checkbox" id="DurationSeven">
+                                        <label class="form-check-label" for="DurationSeven">3 - 6 Hour
+                                            (342)</label>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input class="form-check-input shadow-none" type="checkbox" id="DurationEight">
+                                        <label class="form-check-label" for="DurationEight">6-17 (8)</label>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+
+
+                <div class="d-flex align-items-center mb-3">
+                    <h5>20 results</h5>
+                    <div class="ms-auto">
+                        <select class="form-select  border-secondary   shadow-none">
+                            <option>Sorting</option>
+                            <option>Free</option>
+                            <option>Highest Rated</option>
+                            <option>Most Popular</option>
+                            <option>Newest</option>
+                        </select>
+                    </div>
+
+
+                </div>
+                <div class=" gap-3">
+                    <div class="row gy-4">
+                        <div class="col-xl-4 col-md-6 col-12">
+                            <div class="card  card-hover">
+                                <a href="">
+                                    <img src="../assets/images/figma.jpg" alt="" class="card-img-top img-fluid w-100">
+                                </a>
+                                <div class="card-body py-4 ">
+                                    <div>
+                                        <span class="badge text-light-emphasis  border  rounded-pill">Design</span>
+                                    </div>
+                                    <h4 class="my-2">
+                                        <a href="" class="text-decoration-none text-dark">Figma UI UX Design Course for
+                                            the
+                                            Beginner</a>
+                                        </h3>
+                                        <small class="text-secondary">Jitu Chauhan</small>
+                                        <div>
+                                            <span class="text-secondary fw-semibold">5.0</span>
+                                            <span class="text-warning"><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                                </i></span>
+
+                                            <span class="text-secondary">(245)</span>
+                                        </div>
+                                        <div class="d-flex flex-row gap-2 align-items-center">
+                                            <span class="fw-semibold text-dark">$599 <del>$3,499</del></span>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6 col-12">
+                            <div class="card card-hover">
+                                <a href="">
+                                    <img src="../assets/images/python.jpg" alt="" class="card-img-top img-fluid w-100">
+                                </a>
+                                <div class="card-body py-4 ">
+
+                                    <div>
+                                        <span class="badge text-light-emphasis  border rounded-pill">Web
+                                            Development</span>
+                                    </div>
+                                    <h4 class="my-2">
+                                        <a href="" class="text-decoration-none text-dark">Master the basics of data
+                                            analysis with
+                                            Python</a>
+                                        </h3>
+
+                                        <small class="text-secondary">Sandip Chauhan</small>
+                                        <div>
+                                            <span class="text-secondary fw-semibold">4.5</span>
+                                            <span class="text-warning"><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                                </i></span>
+
+                                            <span class="text-secondary">(3,124)</span>
+                                        </div>
+
+                                        <div>
+                                            <span class="fw-semibold text-dark">$399</span>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-xl-4 col-md-6 col-12">
+                            <div class="card card-hover">
+                                <a href="">
+                                    <img src="../assets/images/bootstrap.jpg" alt="" class="card-img-top img-fluid w-100">
+                                </a>
+                                <div class="card-body py-4 ">
+
+                                    <div>
+                                        <span class="badge text-light-emphasis  border  rounded-pill">Programming</span>
+                                    </div>
+
+                                    <h4 class="my-2">
+                                        <a href="" class="text-decoration-none text-dark">Create Website Using HTML,CSS
+                                            &
+                                            Bootstrap</a>
+                                        </h3>
+
+                                        <small class="text-secondary">Anita Parmar</small>
+                                        <div>
+                                            <span class="text-secondary fw-semibold">4.5</span>
+                                            <span class="text-warning"><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                                </i></span>
+
+                                            <span class="text-secondary">(13,245)</span>
+                                        </div>
+
+                                        <div>
+                                            <span class="fw-semibold text-dark">$199</span>
+                                        </div>
+                                </div>
+                            </div>
+                        </div><div class="col-xl-4 col-md-6 col-12">
+                            <div class="card card-hover">
+                                <a href="">
+                                    <img src="../assets/images/nuxt.jpg" alt="" class="card-img-top img-fluid w-100">
+                                </a>
+                                <div class="card-body py-4 ">
+
+                                    <div>
+                                        <span class="badge text-light-emphasis  border  rounded-pill">Design</span>
+                                    </div>
+                                    <h4 class="my-2">
+                                        <a href="" class="text-decoration-none text-dark">About the Nuxt.js Fundamentals
+                                            course</a>
+                                        </h3>
+
+                                        <small class="text-secondary">Manasvi Suthar</small>
+                                        <div>
+                                            <span class="text-secondary fw-semibold">4.5</span>
+                                            <span class="text-warning"><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                                </i></span>
+
+                                            <span class="text-secondary">(121)</span>
+                                        </div>
+
+                                        <div>
+                                            <span class="fw-semibold text-dark">$899</span>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-4 col-md-6 col-12">
+                            <div class="card card-hover">
+                                <a href="">
+                                    <img src="../assets/images/aws.jpg" alt="" class="card-img-top img-fluid w-100">
+                                </a>
+                                <div class="card-body py-4 ">
+
+                                    <div>
+                                        <span class="badge text-light-emphasis  border  rounded-pill">Web
+                                            Development</span>
+                                    </div>
+                                    <h4 class="my-2">
+                                        <a href="" class="text-decoration-none text-dark">AWS Fundamentals
+                                            Specialization</a>
+                                        </h3>
+
+                                        <small class="text-secondary">Anita Parmar</small>
+                                        <div>
+                                            <span class="text-secondary fw-semibold">4.5</span>
+                                            <span class="text-warning"><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                                </i></span>
+
+                                            <span class="text-secondary">(13,245)</span>
+                                        </div>
+
+                                        <div>
+                                            <span class="fw-semibold text-dark">$199</span>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6 col-12">
+                            <div class="card card-hover">
+                                <a href="">
+                                    <img src="../assets/images/nuxt.jpg" alt="" class="card-img-top img-fluid w-100">
+                                </a>
+                                <div class="card-body py-4 ">
+
+                                    <div>
+                                        <span class="badge text-light-emphasis  border  rounded-pill">Design</span>
+                                    </div>
+                                    <h4 class="my-2">
+                                        <a href="" class="text-decoration-none text-dark">About the Nuxt.js Fundamentals
+                                            course</a>
+                                        </h3>
+
+                                        <small class="text-secondary">Manasvi Suthar</small>
+                                        <div>
+                                            <span class="text-secondary fw-semibold">4.5</span>
+                                            <span class="text-warning"><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                                </i></span>
+
+                                            <span class="text-secondary">(121)</span>
+                                        </div>
+
+                                        <div>
+                                            <span class="fw-semibold text-dark">$899</span>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6 col-12">
+                            <div class="card card-hover">
+                                <a href="">
+                                    <img src="../assets/images/mongodb.jpg" alt="" class="card-img-top img-fluid w-100">
+                                </a>
+                                <div class="card-body py-4 ">
+
+                                    <div>
+                                        <span class="badge text-light-emphasis  border  rounded-pill">Design</span>
+                                    </div>
+                                    <h4 class="my-2">
+                                        <a href="" class="text-decoration-none text-dark">MongoDB - The Complete
+                                            Developer's Guide
+                                            2024</a>
+                                        </h3>
+
+                                        <small class="text-secondary">Manasvi Suthar</small>
+                                        <div>
+                                            <span class="text-secondary fw-semibold">4.5</span>
+                                            <span class="text-warning"><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                                </i></span>
+
+                                            <span class="text-secondary">(121)</span>
+                                        </div>
+
+                                        <div>
+                                            <span class="fw-semibold text-dark">$899</span>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6 col-12">
+                            <div class="card card-hover">
+                                <a href="">
+                                    <img src="../assets/images/supabase.jpg" alt="" class="card-img-top img-fluid w-100">
+                                </a>
+                                <div class="card-body py-4 ">
+
+                                    <div>
+                                        <span class="badge text-light-emphasis  border  rounded-pill">Programming</span>
+                                    </div>
+                                    <h4 class="my-2">
+                                        <a href="" class="text-decoration-none text-dark">Supabase From Scratch:
+                                            Serverless Database</a>
+                                        </h3>
+
+                                        <small class="text-secondary">Anita Parmar</small>
+                                        <div>
+                                            <span class="text-secondary fw-semibold">4.5</span>
+                                            <span class="text-warning"><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                                </i></span>
+
+                                            <span class="text-secondary">(13,245)</span>
+                                        </div>
+
+                                        <div>
+                                            <span class="fw-semibold text-dark">$199</span>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <ul class="pagination ps-3">
+
+
+                            <li class="page-item disabled  me-1">
+                                <a class="page-link rounded" href="#" tabindex="-1">
+                                    <i class="fa-solid fa-chevron-left"></i> </a>
+                            </li>
+
+
+                            <li class="page-item active  me-1">
+                                <a class="page-link  rounded" href="#">1</a>
+                            </li>
+
+                            <li class="page-item me-1 ">
+                                <a class="page-link text-dark rounded shadow-none" href="#">2</a>
+                            </li>
+
+                            <li class="page-item  me-1">
+                                <a class="page-link text-dark rounded shadow-none" href="#">3</a>
+                            </li>
+
+                            <li class="page-item  me-1">
+                                <a class="page-link rounded shadow-none" href="#">
+                                    <i class="fa-solid fa-chevron-right text-dark"></i> </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <div class="container-fluid  dark-blue py-5 ">
+        <div class="container footer text-light ">
+            <div class="row">
+                <div class="col-lg-4  pe-5 col-md-6">
+                    <img src="../assets/images/white-logo.svg" alt="">
+                    <p class="fs-5 mt-4 ">Geek is feature-rich components and beautifully Bootstrap UIKit for developers,
+                        built with
+                        bootstrap responsive framework.</p>
+             
+
+                </div>
+                <div class="col-lg-2  col-md-6 ">
+                    <h2>Company</h2>
+
+                    <ul class="list-unstyled fs-5">
+                        <li><a class=" text-decoration-none text-light" href="">About</a></li>
+                        <li><a class=" text-decoration-none text-light" href="">Pricing</a></li>
+                        <li><a class=" text-decoration-none text-light" href="">Blog</a></li>
+                        <li><a class=" text-decoration-none text-light" href="">Careers</a></li>
+                        <li><a class=" text-decoration-none text-light" href="">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2  col-md-6">
+                    <h2>Support</h2>
+                    <ul class="list-unstyled fs-5">
+                        <li><a class=" text-decoration-none text-light" href="">Help and Support</a></li>
+                        <li><a class=" text-decoration-none text-light" href="">Become Instructor</a></li>
+                        <li><a class=" text-decoration-none text-light" href="">Get the app</a></li>
+                        <li><a class=" text-decoration-none text-light" href="">FAQ’s</a></li>
+                        <li><a class=" text-decoration-none text-light" href="">Tutorial</a></li>
+                    </ul>
+
+
+
+
+
+                </div>
+                <div class="col-lg-4 fs-5  col-md-6  ">
+                    <h2>Get in touch</h2>
+                    <div>339 McDermott Points Hettingerhaven, NV 15283</div>
+                    <div class="email">Email: <a class=" text-decoration-none text-light" href="">support@geeksui.com</a>
+                    </div>
+                    <div>Phone: (000) 123 456 789</div>
+                    <div class="d-flex mt-3 gap-2 flex-wrap"> <img src="../assets/images/appstore.svg" alt=""><img
+                            src="../assets/images/playstore.svg" alt=""></div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const toggleLink = document.getElementById('toggleText');
+        const collapseEl = document.getElementById('collapseContent');
+
+        collapseEl.addEventListener('shown.bs.collapse', () => toggleLink.textContent = 'Show Less');
+        collapseEl.addEventListener('hidden.bs.collapse', () => toggleLink.textContent = 'Show More');
+    </script>
+</body>
+
+</html>

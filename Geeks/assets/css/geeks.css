@@ -1,0 +1,139 @@
+@media (min-width: 1200px) {
+
+  .nav-item.dropdown.position-static .dropdown-menu {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    border: 0;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .15);
+  }
+}
+
+
+.theme {
+  color: rgba(117, 79, 254, 0.950);
+  border-color: rgba(117, 79, 254, 0.950);
+}
+
+.theme:hover {
+  background-color: rgb(117, 79, 254);
+  color: white;
+}
+
+.mt-10 {
+  margin-top: 100px ;
+}
+
+.nav-link.active {
+
+  border-bottom: 3px solid rgba(117, 79, 254, 0.950);
+}
+
+.purpleback {
+  background-color: rgba(117, 79, 254, 0.950);
+
+}
+
+.mt-n5 {
+  margin-top: -50px !important;
+}
+
+.lwhite {
+  background-color: rgb(241,245,249);
+}
+
+.mySwiper {
+  padding-bottom: 50px !important;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 15px !important;
+}
+
+.mySwiper .swiper-button-prev {
+  left: 45%;
+}
+
+.mySwiper .swiper-button-next {
+  right: 43%;
+}
+
+@media screen and (max-width: 1000px) {
+  .mySwiper .swiper-button-prev {
+    left: 30%;
+  }
+
+  .mySwiper .swiper-button-next {
+    right: 30%;
+  }
+}
+
+.purple {
+  color: rgba(117, 79, 254, 0.950);
+}
+ 
+
+.email {
+  margin-top: 10px;
+}
+
+
+
+
+.accordion a:hover {
+  color: rgba(117, 79, 254, 0.95) !important;
+}
+
+.accordion a:not(.collapsed) {
+  color: rgba(117, 79, 254, 0.95) !important;
+}
+
+.about a:hover {
+  color: rgba(117, 79, 254, 0.95) !important;
+  ;
+}
+
+.pic1 {
+  width: 30%;
+ 
+}
+
+.pic2 {  width: 20%;
+ 
+}
+.avatar{width: 60px;
+ }
+ .card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-10px);
+}
+.form-check-input:checked {
+    background-color: rgba(117, 79, 254, 0.95);
+    border-color: rgba(117, 79, 254, 0.95); 
+  
+}
+ 
+.pagination .page-item.active .page-link {
+    background-color: rgba(117, 79, 254, 0.95) !important;
+    border-color: rgba(117, 79, 254, 0.95) !important;
+    color: #fff !important;
+}
+
+
+.pagination .page-link:hover {
+    background-color: rgba(117, 79, 254, 0.95) !important;
+    border-color: rgba(117, 79, 254, 0.95) !important;
+    color: #fff !important;
+}
+ 
+
+
+.page-link:focus {
+    box-shadow: none !important;
+}
+.dark-blue{background-color: rgb(15,23,42);}
